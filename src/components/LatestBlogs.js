@@ -1,5 +1,5 @@
 import React from 'react';
-import './LatestBlogs.css';
+import '../hmc_css/LatestBlogs.css';
 
 const LatestBlogs = () => {
   const blogs = [

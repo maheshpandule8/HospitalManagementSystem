@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './DoctorSearch.css';
+import '../hmc_css/DoctorSearch.css';
 import { FaCalendar, FaUserMd, FaHospital, FaClipboardCheck, FaVial, FaPassport } from 'react-icons/fa';
 
 const DoctorSearch = () => {

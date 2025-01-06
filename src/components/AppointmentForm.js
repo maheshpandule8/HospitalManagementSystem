@@ -1,7 +1,8 @@
 // AppointmentForm.js
 
 import React, { useState } from "react";
-import "./AppointmentForm.css";
+
+import "../hmc_css/AppointmentForm.css";
 
 const AppointmentForm = ({ addAppointment }) => {
 	const [name, setName] = useState("");

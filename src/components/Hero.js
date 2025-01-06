@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Hero.css';
+import '../hmc_css/Hero.css';
 import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {

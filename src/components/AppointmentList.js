@@ -1,7 +1,7 @@
 // AppointmentList.js
 
 import React, { useState } from "react";
-import "./AppointmentList.css";
+import "../hmc_css/AppointmentList.css";
 
 const AppointmentList = ({
 	appointments,

@@ -1,5 +1,5 @@
 import React from 'react';
-import './WhyChoose.css';
+import '../hmc_css/WhyChoose.css';
 import buildingImage from '../icons/BuildingSH.jpg'; // Use a relative path
 
 const WhyChoose = () => {

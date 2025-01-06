@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PatientExperience.css';
+import '../hmc_css/PatientExperience.css';
 
 const PatientExperience = () => {
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);

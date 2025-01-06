@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ClinicalExcellence.css';
+import '../hmc_css/ClinicalExcellence.css';
 
 const ClinicalExcellence = () => {
   const [activeTab, setActiveTab] = useState('Specialities');

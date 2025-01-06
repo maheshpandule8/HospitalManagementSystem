@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FranchiseEnquiryForm.css';
+import '../hmc_css/FranchiseEnquiryForm.css';
 
 
 function FranchiseEnquiryForm() {

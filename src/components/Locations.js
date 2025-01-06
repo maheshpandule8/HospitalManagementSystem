@@ -1,5 +1,5 @@
 import React from 'react';
-import './Locations.css';
+import '../hmc_css/Locations.css';
 
 const Locations = () => {
   const locations = [

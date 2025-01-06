@@ -1,6 +1,6 @@
 // src/components/HealthPackages.js
 import React, { useState } from 'react';
-import './HealthPackage.css';
+import '../hmc_css/HealthPackage.css';
 
 const packages = [
   {

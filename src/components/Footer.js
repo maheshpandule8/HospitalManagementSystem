@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../hmc_css/Footer.css';
 
 const Footer = () => {
   return (

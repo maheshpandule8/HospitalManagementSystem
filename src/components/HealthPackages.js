@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './HealthPackages.css';
+import '../hmc_css/HealthPackages.css';
 
 const HealthPackages = () => {
   const [selectedLocation, setSelectedLocation] = useState('Deccan Gymkhana, Pune');
