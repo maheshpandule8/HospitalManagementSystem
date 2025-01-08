@@ -19,6 +19,8 @@ import BookHomeVisit from './components/BookHomeVisit';
 import BookHealthPackage from './components/BookHealthPackage';
 import FranchiseEnquiryForm from './components/FranchiseEnquiryForm';
 import HealthPackage from './components/HealthPackage';
+import Specialties from './components/Specialties';
+import Team from './components/teamMembers';
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          
           <Route path='/' element={
             <>
               <Header />
@@ -49,6 +52,9 @@ function App() {
           <Route path="/lab/bookHomeVisit" element={<BookHomeVisit/>}/>
           <Route path="lab/bookHealthPackage" element={<BookHealthPackage/>}/>
           <Route path="/lab/FranchiseEnquiryForm"element={<FranchiseEnquiryForm/>}/>
+          <Route path="/Specialities"element={<Specialties/>}/>
+          <Route path="/teamMember" element={<Team/>}/>
+        
          
           <Route 
 							path="/appointment" 
@@ -60,6 +66,33 @@ function App() {
 								</div>
 							} 
 						/>
+
+        </Routes>
+      </Router>
+      <Router>
+        <Routes>
+          
+          <Route path='/hmsAdmin/' element={
+            <>
+              <Header />
+              <div>
+              {/* <Hero /> */}
+
+              </div>
+             
+              
+            </>
+          } />
+          <Route path="/doctors" element={<DoctorSearch />} />
+          <Route path="/lab" element={<Lab/>}/>
+          <Route path="/lab/bookHomeVisit" element={<BookHomeVisit/>}/>
+          <Route path="lab/bookHealthPackage" element={<BookHealthPackage/>}/>
+          <Route path="/lab/FranchiseEnquiryForm"element={<FranchiseEnquiryForm/>}/>
+          <Route path="/Specialities"element={<Specialties/>}/>
+          <Route path="/teamMember" element={<Team/>}/>
+        
+         
+  
 
         </Routes>
       </Router>

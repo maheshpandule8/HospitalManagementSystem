@@ -1,0 +1,147 @@
+.services {
+  /* max-width:900px; */
+  /* width:600px; */
+  background-color: #f9f9f9;
+  text-align: center;
+  max-width:100%;
+  padding: 60px 0px; /* Optional: You can uncomment this if you want some padding */
+}
+
+.services-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  /* width: ; */
+}
+
+.services-grid {
+  display: grid;
+   /* Default responsive grid */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: 20px;
+  
+  /* height:400px; */
+}
+
+.service-card {
+  /* width:50px; */
+  height:300px;
+  width:200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Media Queries */
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+  .services-title {
+    font-size: 2rem; /* Slightly smaller title for small screens */
+    margin-bottom: 30px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Stack all cards vertically on small screens */
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service-title {
+    font-size: 1.25rem; /* Smaller font size for service titles */
+  }
+
+  .service-description {
+    font-size: 0.9rem; /* Smaller font size for descriptions */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .services-title {
+    font-size: 2.2rem; /* Slightly smaller title for medium screens */
+    margin-bottom: 35px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout for medium-sized screens */
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .service-title {
+    font-size: 1.4rem; /* Adjust service title size */
+  }
+
+  .service-description {
+    font-size: 0.95rem; /* Adjust service description size */
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 769px) {
+  .services-title {
+    font-size: 2.5rem; /* Large title for desktop */
+    margin-bottom: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout for large screens */
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-title {
+    font-size: 1.5rem; /* Standard font size for titles */
+  }
+
+  .service-description {
+    font-size: 1rem; /* Standard font size for descriptions */
+  }
+}
