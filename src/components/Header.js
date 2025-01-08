@@ -1,6 +1,11 @@
 import React from 'react';
 import '../hmc_css/Header.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import BookHomeVisit from './BookHomeVisit';
+// import teamMember from './teamMembers';
+// import Specialties from './Specialties';
+
+
 
 const Header = () => {
   const navigate = useNavigate();
@@ -12,6 +17,7 @@ const Header = () => {
           <span>Academics</span>
           <span>CSR</span>
           <span>Career</span>
+          {/* <span><a href="#">Doctor admin</a></span> */}
         </div>
         <div className="header-top-right">
           <div className="emergency-contact">
@@ -30,16 +36,22 @@ const Header = () => {
         <nav className="main-nav">
           <ul>
             <li><a href="#hospitals">Hospitals</a></li>
-            <li><a href="#specialities">Specialities</a></li>
+            <li><a href="/Specialities">Specialities</a></li>
             <li><a href="#health-packages">Health Packages</a></li>
             <li><a href="lab">Labs</a></li>
             <li><a href="#international-patients">International Patients</a></li>
-            <li><a href="#find-doctor">Find A Doctor</a></li>
+            <li><a href="./teamMember">Find A Doctor</a></li>
           </ul>
+          
         </nav>
         
         <div className="header-buttons">
-          <button className="home-care-btn">Home Care</button>
+          <Link to="/Lab/BookHomeVisit">
+          <button className="home-care-btn" onClick={<BookHomeVisit />}>
+          Home Care</button>
+          </Link>
+          
+          
           <button className="hero-cta" onClick={() => navigate('/appointment')}>Book Appointment</button>
              
         </div>

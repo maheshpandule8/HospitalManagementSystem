@@ -149,3 +149,54 @@
     padding: 10px 3%;
   }
 } 
+
+/* Dropdown menu */
+.nav-item.dropdown {
+  position:relative;
+  
+}
+/* .nav-item.dropdown a:hover{
+
+} */
+
+.nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+/* Contact Button */
+.header-contact {
+  display: none;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger .bar {
+  background-color: #333;
+  height: 4px;
+  width: 100%;
+}
+
+.hamburger:hover .bar {
+  background-color: #3498db;
+}
