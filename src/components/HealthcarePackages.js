@@ -148,7 +148,7 @@ const HealthcarePackages = () => {
         <div className="healthcare-page">
             <div className="healthcare-banner-container">
                 <div className="healthcare-banner-content">
-                    <h1 className="healthcare-banner-title">Sanjivani Preventive</h1>
+                    <h1 className="healthcare-banner-title">Sahyadri Preventive</h1>
                     <h2 className="healthcare-banner-subtitle">Health Packages</h2>
                 </div>
                 <img

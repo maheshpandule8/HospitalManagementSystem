@@ -44,10 +44,8 @@ function App() {
               <PatientExperience />
               <LatestBlogs />
               <HealthPackages />
-              <HealthcarePackages />
               <Locations />
               <Footer />
-             <HealthPackage/>
             </>
           } />
           <Route path="/doctors" element={<DoctorSearch />} />
