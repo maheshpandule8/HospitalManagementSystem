@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -21,6 +22,7 @@ import FranchiseEnquiryForm from './components/FranchiseEnquiryForm';
 import HealthPackage from './components/HealthPackage';
 import Specialties from './components/Specialties';
 import Team from './components/teamMembers';
+import HealthcarePackages from './components/HealthcarePackages';
 
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
               <PatientExperience />
               <LatestBlogs />
               <HealthPackages />
+              <HealthcarePackages />
               <Locations />
               <Footer />
              <HealthPackage/>
@@ -54,6 +57,7 @@ function App() {
           <Route path="/lab/FranchiseEnquiryForm"element={<FranchiseEnquiryForm/>}/>
           <Route path="/Specialities"element={<Specialties/>}/>
           <Route path="/teamMember" element={<Team/>}/>
+          <Route path="/healthcare-package" element={<HealthcarePackages/>}/>
         
          
           <Route 

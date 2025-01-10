@@ -16,6 +16,7 @@ import DoctorProfile from './components/DoctorProfile';
 
 	
 import DoctorRegistration from "./components/DoctorRegistration";
+import HealthcarePackages from "./HealthcarePackages";
 
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
 	};
 
 	return (
+		
 		<Router>
 			<div className="App">
 				<Navbar />
@@ -81,7 +83,10 @@ const App = () => {
 						<Route path="/doctors" element={<OurDoctors />} />
 						<Route path="/doctor/:id" element={<DoctorProfile />} />
 						<Route path="/doctor-registration" element={<DoctorRegistration />} />
+						<Route path="/healthcarepack" element={<HealthcarePackages />}/>
+						
 					</Routes>
+
 				</div>
 				<Footer />
 			</div>
