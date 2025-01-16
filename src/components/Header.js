@@ -37,7 +37,7 @@ const Header = () => {
           <ul>
             <li><a href="#hospitals">Hospitals</a></li>
             <li><a href="/Specialities">Specialities</a></li>
-            <li><a href="#health-packages">Health Packages</a></li>
+            <li><a href="/healthcare-package" onClick={() => navigate('/healthcare-package')}>Health Packages</a></li>
             <li><a href="lab">Labs</a></li>
             <li><a href="#international-patients">International Patients</a></li>
             <li><a href="./teamMember">Find A Doctor</a></li>
